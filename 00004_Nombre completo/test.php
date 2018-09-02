@@ -10,5 +10,5 @@ public function testDescriptionExample(): void {
   $this->assertTrue($res === "Jon Snow", "Dado el nombre Jon Snow la función retorna '$res'");
   
   $res = nombreCompleto("Arya", "Stark");
-  $this->assertTrue($res === "Jon Snow", "Dado el nombre Jon Snow la función retorna '$res'");
+  $this->assertTrue($res === "Arya Stark", "Dado el nombre Arya Stark la función retorna '$res'");
 }

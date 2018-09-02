@@ -3,7 +3,8 @@ name: 'Clase 3: Funciones'
 locale: es
 type: learning
 beta: false
-teacher_info: 
+teacher_info: ''
 language: php
 id_format: "%05d"
-order: []
+order:
+- 1

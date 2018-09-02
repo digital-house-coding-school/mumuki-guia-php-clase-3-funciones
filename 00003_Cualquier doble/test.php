@@ -17,6 +17,7 @@ public function testDescriptionExample(): void {
   $exito = true;
   foreach ($res as $r) {
     $exito = $exito && $r == $arr[$i] * 2;
+    $i++;
   }
   
   $this->assertTrue($exito, "La función no esta retornando los dobles");

@@ -20,6 +20,10 @@ public function testDescriptionExample(): void {
   $cantUnoAlDiez = substr_count($sol, "unoAlDiez");
   
   $this->assertTrue($cantUnoAlDiez > 0, "Se ve que no llamaste a la función 'unoAlDiez'");
+  
+  $trampa = substr_count($sol, "10") + substr_count($sol, "20");
+  $trampa = $trampa == 0;
+  $this->assertTrue($trampa, "No deberías escribir los números textuales en esta solución");
 }
 
 /*...content...*/

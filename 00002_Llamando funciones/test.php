@@ -16,6 +16,10 @@ public function testDescriptionExample(): void {
   }
   
   $this->assertTrue($exito, "¿Estás seguro que estas devolviendo el resultado correcto");
+  
+  $cantUnoAlDiez = substr_count($sol, "unoAlDiez");
+  
+  $this->assertTrue($cantUnoAlDiez > 1, "Se ve que no llamaste a la función 'unoAlDiez'");
 }
 
 /*...content...*/

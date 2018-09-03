@@ -2,10 +2,13 @@ public function testDescriptionExample(): void {
   $this->assertTrue(function_exists("entreDosNumeros"), "No existe la función entreDosNumeros");
   
   $fct = new ReflectionFunction('entreDosNumeros');
-  $fct = $fct->getNumberOfRequiredParameters();
+  $params = $fct->getNumberOfRequiredParameters();
   
-  var_dump($fct);exit;
-  $this->assertTrue($fct == 3, "La función debe recibir 3 parámetros");
+  $this->assertTrue($params == 1, "La función debe recibir 1 parámetro obligatorio");
+  
+  $paramsOpt = $fct->getNumberOfParameters() - $params;
+  
+  $this->assertTrue($paramsOpt == 2, "La función debe recibir 2 parámetros optativos");
   
   
   $this->assertTrue(entreDosNumeros(50, 10, 60) == true, "La función falla para el número 50 con 10 y 60 cómo límites");

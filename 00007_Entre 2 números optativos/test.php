@@ -21,4 +21,10 @@ public function testDescriptionExample(): void {
   
   $this->assertTrue(entreDosNumeros(-90, -50, 0) == false, "La función falla para el número -90 con -50 y 0 cómo límites");
   $this->assertTrue(entreDosNumeros(-1, 0, 10) == false, "La función falla para el número -1 con 0 y 10 cómo límites");
+  
+  $this->assertTrue(entreDosNumeros(50) == true, "La función falla para el número 50 sin límites específicos");
+  $this->assertTrue(entreDosNumeros(0) == true, "La función falla para el número 0 sin límites específicos");
+  $this->assertTrue(entreDosNumeros(100) == true, "La función falla para el número 100 sin límites específicos");
+  $this->assertTrue(entreDosNumeros(-1) == false, "La función falla para el número -1 sin límites específicos");
+  $this->assertTrue(entreDosNumeros(101) == false, "La función falla para el número 101 sin límites específicos");
 }

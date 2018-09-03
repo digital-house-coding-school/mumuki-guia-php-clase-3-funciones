@@ -5,6 +5,7 @@ public function testDescriptionExample(): void {
   $fct = $fct->getNumberOfRequiredParameters();
   
   $this->assertTrue($fct == 3, "La función debe recibir 3 parámetros");
+  var_dump($fct);exit;
   
   $this->assertTrue(entreDosNumeros(50, 10, 60) == true, "La función falla para el número 50 con 10 y 60 cómo límites");
   $this->assertTrue(entreDosNumeros(0, 0, 10) == true, "La función falla para el número 0 con 0 y 10 como límites");
